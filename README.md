@@ -20,19 +20,10 @@ The **else** statement means the user requested an acceptable amount of items.
 
 ![Bamazon Customer in Action](/assets/images/bamazonCustomer.JPG)
 
-=================================================================
-
-##BamazonManager.js
-
-*This file has four functions for altering the database. *View Products for Sale*, *View Low Inventory*, *Add to Inventory*, *Add New Product* and an *Exit* function.
-
-###How it works
-
 We connect to the database and jump into the **managerPrompt()**function which contains our inquire prompts. The user is limited in their choices so an input would bring an unecessary need to validate user input.
 Once the user selects what they would like to do we run their command through a switch, each case labeled as one of the choices and lead to their respective functions. 
 
 ###Functions
-
 There are four functions:
 1. *getData()*, is nearly identical to what it was in the *bamazonCustomer.js* file. It returns the database data. 
 2. *viewLow()* sends query logic where the item_quantity < 5 and returns them to the user.
