@@ -40,7 +40,7 @@ Format: ![Alt Text](url)
 Format: ![Alt Text](url)
 
 
-![Low Quantity in Action](/assets/images/bamazonCustomer.JPG)
+![Low Quantity in Action](/assets/images/bamazonManagerLow.JPG)
 Format: ![Alt Text](url)
 
 *addInv and addNewProduct are having asynchronisity issues and are still works in progress.*
