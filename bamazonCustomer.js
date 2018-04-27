@@ -1,6 +1,6 @@
 const mysql = require("mysql");
 const inquirer = require("inquirer");
- let DataDisplayer = require("./dataDisplayFunc.js");
+ //let DataDisplayer = require("./dataDisplayFunc.js");
 // let myPrompts = require("./promptFunctions.js");
 
 const connection = mysql.createConnection({
