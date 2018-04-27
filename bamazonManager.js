@@ -117,19 +117,15 @@ function managerPrompt() {
         let addition = parseInt(input.amount);
         let newQuantity = 0;
 
-        console.log('addition ',addition);
-        console.log('addition type ',typeof(addition));
-
+        // its that damn asynchronisity!!!!!!
         connection.query(`SELECT stock_quantity FROM products WHERE item_id=${input.itemSelect}`, function(err, result){
-          console.log("quantity ",result[0].stock_quantity);
+          console.log("quantity ", result[0].stock_quantity);
           quantity = result[0].stock_quantity;
           console.log('quant type ',typeof(quantity));
           console.log("added together ", addition + quantity)
-          NewQuantity = addition + quantity;
+          newQuantity = addition + quantity;
           console.log("newquantity ", newQuantity);
         });
-
-
 
         connection.query(`UPDATE products SET stock_quantity =${quantity} WHERE item_id=${input.itemSelect}`,
           function(err, results) {
